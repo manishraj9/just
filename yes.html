@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="./style.css" />
     <style>
       body {
-        background-image: url('anuumanu.jpg'); /* Background image */
-        background-size: cover; /* Ensures the image covers the entire background */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
+        /* Removed background image */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Full viewport height */
         color: white; /* Default text color for body */
+        background-color: #000; /* Optional: Set a solid background color */
       }
       h1 {
         color: #b70c0c; /* Change color for h1 */
@@ -21,10 +24,15 @@
       h3 {
         color: #0c0430; /* Change color for h3 */
       }
+      img {
+        max-width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+      }
     </style>
   </head>
   <body>
     <div class="container">
+      <img src="anuumanu.jpg" alt="Your Image Description" /> <!-- Add your image here -->
       <div
         class="tenor-gif-embed"
         data-postid="253027946666209433"
